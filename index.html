@@ -6,45 +6,59 @@
     <title>066pine</title>
     <style>
         /* Basic CSS Components */
+        html{
+                scroll-behavior: smooth;
+                background-color: #000;
+        }
         body { 
             font-family: Helvetica, sans-serif;
-             line-height: 1.6; margin: 0;
-              padding: 0;
-               background: #f4f4f4;
+            line-height: 1.6; margin: 0;
+            padding: 0;
+            background: #fff;
+            transition: background 0.3s ease-in-out;
              }
+
         header { 
             background: #000;
              color: #fff;
               padding: 2rem;
                text-align: center;
+               box-shadow: 0 0 36px rgb(24, 24, 24);
              }
+
         .container { 
-            width: 80%;
              margin: auto;
               overflow: hidden;
-               padding: 20px; }
+               padding: 20px;
+            box-shadow: 0 0px 50px rgba(0,0,0,0.1); }
         
         .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .profile-img {
-             border-radius: 50%;
+        .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 14px 50px rgba(0,0,0,0.1);
+             transition: transform 0.2s ease-in-out; }
+        .card:hover { transform: translateY(-5px);
+            }
+        .profile-img {;
+             border-radius: 5%;
              width: 150px; 
-             
+             box-shadow: 0 2px 338px rgba(0,0,0,0.5);
              }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="https://scontent-sin6-2.cdninstagram.com/v/t51.82787-19/640414992_18123549043590609_1882245198325245540_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2gFkBkAu8CpHxWM1HEZomp5QwBJtinJk10Q7xb2U6o7c7O4v_ufmyUtCPuLLvFTugzsfd_Z06jBevoJUY66wy8cP&_nc_ohc=ikD00Ko6ZGsQ7kNvwFHCtA1&_nc_gid=d21s8oy-y7zlnRfNn0X6Tg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af1LqKKuXazI9AufWNd99Wfar2OpAq813k0Z5F5D9dnCJw&oe=69F7676A&_nc_sid=7a9f4b">
+        <img src="/img/mypic.jpeg" alt="Profile Picture" class="profile-img">
         <h1>Hi, I'm Aprian Syahrani👋</h1>
-        <p>I do Website Frontend Development, and Computer Networking</p>
+        <p>I do website frontend development, IT support, and Computer networking as my service.</p>
     </header>
 
     <div class="container">
         <section id="profile">
-            <h2>About Me</h2>
-            <p>Lorem</p>
+            <h2>Contact Me</h2>
+            <p>Email: 11251023@student.itk.ac.id</p>
+            <p>WhatsApp: (+62)82154461145</p>
+            <p>Instagram		: <a href="https://instagram.com/apyansy" target="_blank">@apyansy</a></p>
+            <p>LinkedIn		: <a href="https://linkedin.com/in/apyansy" target="_blank">linkedin.com/in/apyansy</a></p>
         </section>
 
         <hr>
@@ -66,5 +80,8 @@
         </section>
     </div>
 
+<footer style="text-align: center; padding: 20px; background: #000; color: #fff;">
+    &copy; 2026 Aprian Syahrani. All rights reserved.
+</footer>
 </body>
 </html>
